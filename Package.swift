@@ -3,26 +3,27 @@
 import PackageDescription
 
 let package = Package(
-  name: "SagaPythonMarkdownReader",
+  name: "SagaInkMarkdownReader",
   products: [
     .library(
-      name: "SagaPythonMarkdownReader",
-      targets: ["SagaPythonMarkdownReader"]),
+      name: "SagaInkMarkdownReader",
+      targets: ["SagaInkMarkdownReader"]),
   ],
   dependencies: [
     .package(name: "Saga", url: "https://github.com/loopwerk/Saga.git", .branch("SwiftMarkdown")),
-    .package(name: "SwiftMarkdown", url: "https://github.com/loopwerk/SwiftMarkdown", from: "0.2.0"),
+    .package(name: "Ink", url: "https://github.com/johnsundell/ink.git", from: "0.2.0"),
+    .package(name: "Splash", url: "https://github.com/JohnSundell/Splash", from: "0.1.0"),
   ],
   targets: [
     .target(
-      name: "SagaPythonMarkdownReader",
+      name: "SagaInkMarkdownReader",
       dependencies: [
         "Saga",
         "Ink",
         "Splash",
       ]),
     .testTarget(
-      name: "SagaPythonMarkdownReaderTests",
-      dependencies: ["SagaPythonMarkdownReader"]),
+      name: "SagaInkMarkdownReaderTests",
+      dependencies: ["SagaInkMarkdownReader"]),
   ]
 )
