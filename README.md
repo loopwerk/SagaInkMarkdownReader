@@ -9,8 +9,8 @@ Include `SagaInkMarkdownReader` in your Package.swift as usual:
 let package = Package(
   name: "MyWebsite",
   dependencies: [
-    .package(name: "Saga", url: "https://github.com/loopwerk/Saga.git", from: "0.8.0"),
-    .package(name: "SagaInkMarkdownReader", url: "https://github.com/loopwerk/SagaInkMarkdownReader", from: "0.2.0"),
+    .package(name: "Saga", url: "https://github.com/loopwerk/Saga.git", from: "0.11.0"),
+    .package(name: "SagaInkMarkdownReader", url: "https://github.com/loopwerk/SagaInkMarkdownReader", from: "0.3.0"),
   ],
   targets: [
     .target(
