@@ -29,21 +29,12 @@
         }
       },
       {
-        "package": "PythonKit",
-        "repositoryURL": "https://github.com/pvieito/PythonKit.git",
-        "state": {
-          "branch": null,
-          "revision": "074622c6893188bbb7926eee2f7eece8a5124c47",
-          "version": "0.1.0"
-        }
-      },
-      {
         "package": "Saga",
         "repositoryURL": "https://github.com/loopwerk/Saga.git",
         "state": {
           "branch": null,
-          "revision": "294c1151f5ab36db857ee6301e61563097c04390",
-          "version": "0.11.0"
+          "revision": "bfec86a98a6534fd5e5207cd08daf65cb6036b95",
+          "version": "0.14.0"
         }
       },
       {
@@ -71,24 +62,6 @@
           "branch": null,
           "revision": "81de0389558ad40579027735841593b21a511fa8",
           "version": "0.15.0"
-        }
-      },
-      {
-        "package": "Stencil",
-        "repositoryURL": "https://github.com/stencilproject/Stencil.git",
-        "state": {
-          "branch": null,
-          "revision": "94197b3adbbf926348ad8765476a158aa4e54f8a",
-          "version": "0.14.0"
-        }
-      },
-      {
-        "package": "SwiftMarkdown",
-        "repositoryURL": "https://github.com/loopwerk/SwiftMarkdown",
-        "state": {
-          "branch": null,
-          "revision": "3e9b02ff5ba995c4469ab12395be97c0953e2fdf",
-          "version": "0.3.0"
         }
       }
     ]

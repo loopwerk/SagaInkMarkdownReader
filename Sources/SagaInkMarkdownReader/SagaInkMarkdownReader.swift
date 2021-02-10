@@ -2,9 +2,6 @@ import Foundation
 import Saga
 import Ink
 import Splash
-import Codextended
-import PathKit
-import Slugify
 
 public extension Reader {
   static func inkMarkdownReader(pageProcessor: ((Page<M>) -> Void)? = nil) -> Self {
@@ -20,7 +17,6 @@ public extension Reader {
       let decoder = makeMetadataDecoder(for: markdown.metadata)
       let date = try resolvePublishingDate(from: absoluteSource, decoder: decoder)
       let metadata = try M.init(from: decoder)
-      let template = try decoder.decodeIfPresent("template", as: Path.self)
 
       // Create the Page
       let page = Page(
@@ -31,8 +27,7 @@ public extension Reader {
         body: markdown.html,
         date: date,
         lastModified: absoluteSource.modificationDate ?? Date(),
-        metadata: metadata,
-        template: template
+        metadata: metadata
       )
 
       // Run the processor, if any, to modify the Page
