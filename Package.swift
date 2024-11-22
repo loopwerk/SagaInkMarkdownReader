@@ -13,7 +13,7 @@ let package = Package(
       targets: ["SagaInkMarkdownReader"]),
   ],
   dependencies: [
-    .package(name: "Saga", url: "https://github.com/loopwerk/Saga.git", from: "1.0.0"),
+    .package(name: "Saga", url: "https://github.com/loopwerk/Saga.git", from: "1.3.0"),
     .package(name: "Ink", url: "https://github.com/johnsundell/ink.git", from: "0.5.0"),
     .package(name: "Splash", url: "https://github.com/JohnSundell/Splash", from: "0.16.0"),
   ],

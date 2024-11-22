@@ -25,7 +25,8 @@ public extension Reader {
         title: markdown.title ?? relativeSource.lastComponentWithoutExtension,
         rawContent: contents,
         body: markdown.html,
-        date: date,
+        published: date,
+        created: absoluteSource.creationDate ?? Date(),
         lastModified: absoluteSource.modificationDate ?? Date(),
         metadata: metadata
       )
