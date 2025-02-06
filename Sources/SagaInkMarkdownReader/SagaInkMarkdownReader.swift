@@ -4,7 +4,7 @@ import Ink
 import Splash
 
 public extension Reader {
-  static func inkMarkdownReader(itemProcessor: ((Item<M>) async -> Void)? = nil) -> Self {
+  static var inkMarkdownReader: Self {
     Reader(supportedExtensions: ["md", "markdown"], convert: { absoluteSource, relativeSource, relativeDestination in
       let contents: String = try absoluteSource.read()
 
@@ -30,11 +30,6 @@ public extension Reader {
         lastModified: absoluteSource.modificationDate ?? Date(),
         metadata: metadata
       )
-
-      // Run the processor, if any, to modify the Page
-      if let itemProcessor = itemProcessor {
-        await itemProcessor(item)
-      }
 
       return item
     })
