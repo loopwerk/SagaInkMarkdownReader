@@ -1,6 +1,6 @@
 import Foundation
-import Saga
 import Ink
+import Saga
 import Splash
 
 public extension Reader {
