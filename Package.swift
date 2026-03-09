@@ -1,11 +1,11 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.10
 
 import PackageDescription
 
 let package = Package(
   name: "SagaInkMarkdownReader",
   platforms: [
-    .macOS(.v12),
+    .macOS(.v14),
   ],
   products: [
     .library(
@@ -14,9 +14,9 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(name: "Saga", url: "https://github.com/loopwerk/Saga.git", from: "2.0.3"),
-    .package(name: "Ink", url: "https://github.com/johnsundell/ink.git", from: "0.5.0"),
-    .package(name: "Splash", url: "https://github.com/JohnSundell/Splash", from: "0.16.0"),
+    .package(url: "https://github.com/loopwerk/Saga.git", from: "2.0.3"),
+    .package(url: "https://github.com/johnsundell/Ink.git", from: "0.5.0"),
+    .package(url: "https://github.com/JohnSundell/Splash", from: "0.16.0"),
   ],
   targets: [
     .target(
