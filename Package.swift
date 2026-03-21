@@ -14,7 +14,7 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(url: "https://github.com/loopwerk/Saga.git", from: "2.0.3"),
+    .package(url: "https://github.com/loopwerk/Saga.git", "2.0.3"..<"4.0.0"),
     .package(url: "https://github.com/johnsundell/Ink.git", from: "0.5.0"),
     .package(url: "https://github.com/JohnSundell/Splash", from: "0.16.0"),
   ],
