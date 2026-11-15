@@ -15,7 +15,7 @@ final class SagaInkMarkdownReaderTests: XCTestCase {
 
     // Test frontmatter
     XCTAssertEqual(result.title, "Test Article")
-    let frontmatter = result.frontmatter!
+    let frontmatter = try XCTUnwrap(result.frontmatter)
     XCTAssertEqual(frontmatter["date"], "2025-06-23")
     XCTAssertEqual(frontmatter["tags"], "swift, markdown, testing")
     XCTAssertEqual(frontmatter["summary"], "This is a test article for unit testing")
